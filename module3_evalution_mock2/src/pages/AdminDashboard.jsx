@@ -1,20 +1,21 @@
-import React, { useCallback } from "react";
+
 import React ,{useState,useCallback} from 'react';
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 import FleetCard from "../components/FleetCard";
+import App from "../App";
 
 const AdminDashboard = () => {
-    const [fleetData, setFleetData] = useState([]);
+    const [fleets, setFleets] = useState([]);
 
     const addFleet =(fleet) => {
         setFleets((prev) => [...prev, fleet]);
     };
 
-    const updateDrive = useCallback((id, updatedDrive) => {
-        setFleetData((prev) =>
+    const updateDriver = useCallback((id, updatedDriver) => {
+        setFleets((prev) =>
         prev.map((f) => 
-        f.id === id ? { ...f, driver: newDriver } : f
+        f.id === id ? { ...f, driver: updatedDriver } : f
     )
 );
     },[]);

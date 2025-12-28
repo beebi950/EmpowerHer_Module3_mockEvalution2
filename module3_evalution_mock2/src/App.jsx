@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import { BrowserRouter ,Routes,Route,Navigate } from 'react-router-dom';
 import Login from "./pages/Login";
-import AdminDashboard from ".pages/AdminDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 import ProtectedRoute from './components/ProtectedRoute';
 
 
