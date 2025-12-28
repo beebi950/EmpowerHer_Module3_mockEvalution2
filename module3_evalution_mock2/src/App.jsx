@@ -4,6 +4,7 @@ import Login from "./pages/Login";
 import AdminDashboard from ".pages/AdminDashboard";
 import ProtectedRoute from './components/ProtectedRoute';
 
+
 function App(){
   const [isAuth,setIsAuth]=useState(false);
 
